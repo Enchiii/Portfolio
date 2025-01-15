@@ -1,0 +1,109 @@
+@import url('Colors-dark.css');
+
+.theme-icon {
+    width: 2rem;
+    height: 2rem;
+    transition: opacity .3s ease;
+}
+
+.moon-icon {
+    animation: rotate-moon-icon .6s ease forwards;
+}
+
+.sun-icon {
+    animation: rotate-sun-icon .6s ease forwards;
+}
+
+@keyframes rotate-moon-icon {
+    0% {
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+    }
+    10% {
+        transform: rotate(36deg) scale(0.9);
+        opacity: 0.8;
+    }
+    20% {
+        transform: rotate(72deg) scale(0.8);
+        opacity: 0.6;
+    }
+    30% {
+        transform: rotate(108deg) scale(0.7);
+        opacity: 0.4;
+    }
+    40% {
+        transform: rotate(144deg) scale(0.6);
+        opacity: 0.3;
+    }
+    50% {
+        transform: rotate(180deg) scale(0.5);
+        opacity: 0.2;
+    }
+    60% {
+        transform: rotate(216deg) scale(0.6);
+        opacity: 0.3;
+    }
+    70% {
+        transform: rotate(252deg) scale(0.7);
+        opacity: 0.4;
+    }
+    80% {
+        transform: rotate(288deg) scale(0.8);
+        opacity: 0.6;
+    }
+    90% {
+        transform: rotate(324deg) scale(0.9);
+        opacity: 0.8;
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes rotate-sun-icon {
+    0% {
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+    }
+    10% {
+        transform: rotate(-36deg) scale(0.9);
+        opacity: 0.8;
+    }
+    20% {
+        transform: rotate(-72deg) scale(0.8);
+        opacity: 0.6;
+    }
+    30% {
+        transform: rotate(-108deg) scale(0.7);
+        opacity: 0.4;
+    }
+    40% {
+        transform: rotate(-144deg) scale(0.6);
+        opacity: 0.3;
+    }
+    50% {
+        transform: rotate(-180deg) scale(0.5);
+        opacity: 0.2;
+    }
+    60% {
+        transform: rotate(-216deg) scale(0.6);
+        opacity: 0.3;
+    }
+    70% {
+        transform: rotate(-252deg) scale(0.7);
+        opacity: 0.4;
+    }
+    80% {
+        transform: rotate(-288deg) scale(0.8);
+        opacity: 0.6;
+    }
+    90% {
+        transform: rotate(-324deg) scale(0.9);
+        opacity: 0.8;
+    }
+    100% {
+        transform: rotate(-360deg) scale(1);
+        opacity: 1;
+    }
+}

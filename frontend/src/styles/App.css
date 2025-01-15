@@ -1,0 +1,16 @@
+@import url("Colors-dark.css");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* doodanie plynnej zmiany prametrow poczas zmiany themu */
+body  {
+  transition: background-color 1s ease; 
+}
+
+body.dark{
+  background-color:  var(--bg1);
+}
