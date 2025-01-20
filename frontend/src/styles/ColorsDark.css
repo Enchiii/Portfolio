@@ -4,10 +4,11 @@
     --bg3: #3c3836;
     --bg4: #504945;
     --bg5: #665c54;
-    --fg1: #ebdbb2;
-    --fg2: #d5c4a1;
-    --fg3: #bdae93;
-    --fg4: #a89984;
+    --fg1: #fbf1c7;
+    --fg2: #ebdbb2;
+    --fg3: #d5c4a1;
+    --fg4: #bdae93;
+    --fg5: #a89984;
 
     --red1: #cc241d;
     --red2: #fb4934;
@@ -21,4 +22,7 @@
     --purple2: #d3869b;
     --aqua1: #689d6a;
     --aqua2: #8ec07c;
+    --orange1: #d65d0e;
+    --orange2: #fe8019;
+    --gray1: #928374;
 }

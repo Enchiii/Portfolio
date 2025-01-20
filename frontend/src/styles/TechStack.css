@@ -1,0 +1,102 @@
+@import url("ColorsDark.css");
+@import url("ColorsLight.css");
+
+.box {
+  margin-top: 4rem;
+  /* margin-top: 1rem; */
+  padding-top: .8rem;
+  padding-bottom: .8rem;
+  border-radius: .2rem;
+}
+
+body.dark .box {
+    /* border: .15rem solid var(--fg1); */
+    background-color: var(--bg2);
+}
+
+body.light .box {
+  background-color: var(--bg3-light);
+}
+
+.tech-stack-container {
+  margin-top: 1rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: .2rem;
+}
+
+.skills-text {
+  /* margin-top: 3rem; */
+  padding: .2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--yellow1);
+}
+
+.tech-item-wrapper {
+  padding: .3rem;
+  position: relative;
+}
+
+.tech-item {
+  /* padding: 3rem; */
+  position: relative;
+  border-radius: .5rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all;
+  transition: transform 0.5s ease-in-out;
+}
+
+.tech-item svg {
+  /* width: 2rem;
+  height: 2rem; */
+  width: 70%;
+  height: 70%;
+  padding: .2rem;
+}
+
+body.dark .tech-item {
+  border: .15rem solid var(--fg2);
+}
+
+body.light .tech-item {
+  border: .15rem solid var(--fg4-light);
+}
+
+.tech-item:hover {
+  border: .15rem solid var(--green1) !important;
+  transform: scale(1.1);
+}
+
+.tech-name {
+  position: absolute;
+  top: .2rem;
+  font-size: 0.6rem; 
+  opacity: 0;
+  transition: opacity 0.3s ease; 
+  color: var(--hover-color); 
+}
+
+.tech-item:hover .tech-name {
+  opacity: 1;
+}
+
+@keyframes sway {
+  0%, 100% {
+      transform: translateX(0) rotate(0deg);
+  }
+  25% {
+      transform: translateX(-.1rem) rotate(-10deg); 
+  }
+  50% {
+      transform: translateX(.1rem) rotate(10deg); 
+  }
+  75% {
+      transform: translateX(-.1rem) rotate(-10deg); 
+  }
+}

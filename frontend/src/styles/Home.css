@@ -1,0 +1,45 @@
+@import url("ColorsDark.css");
+@import url("ColorsLight.css");
+
+p.motto{
+    color: var(--aqua1);
+    font-size: 1.7rem;
+    font-weight: 700;
+    /* border: .1rem solid var(--fg1); */
+    border-radius: .2rem;
+    padding: .5rem;
+}
+
+/* body.dark p.motto{
+    background-color: var(--bg2);
+}
+
+body.light p.motto{
+    background-color: var(--bg3-light);
+} */
+
+.about {
+    margin-top: 3rem;
+    /* font-size: 1.1rem; */
+}
+
+body.dark .about{
+    color: var(--fg2);
+}
+
+body.light .about {
+    color: var(--fg3-light);
+}
+
+.about p{
+    padding: 1rem 2rem 1rem 2rem;
+    text-align: left;
+}
+
+body.dark .about{
+    background-color: var(--bg2);
+}
+
+body.light .about{
+    background-color: var(--bg3-light);
+}

@@ -1,0 +1,219 @@
+@import url("ColorsDark.css");
+@import url("ColorsLight.css");
+
+.header {
+    padding: 0rem 2rem .5rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    border-radius: .2rem;
+}
+
+body.dark .header, body.dark .container, body.dark .contact, body.dark .education {
+    background-color: var(--bg2);
+}
+
+body.light .header, body.light .container, body.light .contact, body.light .education {
+    background-color: var(--bg3-light);
+}
+
+.left .info{
+    color: var(--yellow1);
+    margin-top: .8rem;
+    margin-left: .1rem;
+}
+
+body.dark .left .info span {
+    color: var(--yellow2);
+    font-weight: 400;
+}
+
+body.light .left .info span {
+    color: var(--yellow2-light);
+    font-weight: 400;
+}
+
+.name {
+    color: var(--aqua1);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.avatar img {
+    width: 8rem;
+    height: 8rem;
+}
+
+.container, .contact, .education {
+    margin-top: 1.5rem;
+    text-align: left;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: .2rem;
+}
+
+.container h3 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--blue1);
+}
+
+.container p, .container .list{
+    /* font-size: 1.1rem; */
+    margin-top: 2rem;
+}
+
+body.dark .container p, body.dark .container .list {
+    color: var(--fg2);
+}
+
+body.light .container p, body.light .container .list {
+    color: var(--fg3-light);
+}
+
+.container h4 {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--blue1);
+}
+
+.container ul {
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.container ul li {
+    margin-top: 0.5rem;
+}
+
+.contact h3 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--yellow1);
+}
+
+.contact .social-icons {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: .5rem;
+}
+
+.contact .social-icons .link {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: .5rem;
+    /* font-size: 1.1rem; */
+    transition: background 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.contact .social-icons svg {
+    font-size: 2rem;
+}
+
+body.dark .contact .social-icons  span span{
+    color: var(--fg2);
+}
+
+body.light .contact .social-icons span span{
+    color: var(--fg3-light);
+}
+
+body.dark .contact .social-icons .link:nth-of-type(1){
+    color: var(--red1);
+}
+
+body.dark .contact .social-icons .link:nth-of-type(2){
+    color: var(--fg1);
+}
+
+body.dark .contact .social-icons .link:nth-of-type(3){
+    color: var(--blue1);
+}
+
+body.dark .contact .social-icons .link:nth-of-type(4){
+    color: var(--purple1);
+}
+
+body.dark .contact .social-icons .link:nth-of-type(5){
+    color: var(--blue2);
+}
+
+body.light .contact .social-icons .link:nth-of-type(1){
+    color: var(--red1);
+}
+
+body.light .contact .social-icons .link:nth-of-type(2){
+    color: var(--fg1-light);
+}
+
+body.light .contact .social-icons .link:nth-of-type(3){
+    color: var(--blue2-light);
+}
+
+body.light .contact .social-icons .link:nth-of-type(4){
+    color: var(--purple2-light);
+}
+
+body.light .contact .social-icons .link:nth-of-type(5){
+    color: var(--blue1-light);
+}
+
+body.dark .contact .social-icons .link:hover {
+    background-color: var(--bg3) !important;
+    transform: translateX(1.5rem);
+}
+
+body.light .contact .social-icons .link:hover {
+    /* animation: sway 0s infinite ease-in-out; */
+    background-color: var(--bg4-light) !important;
+    transform: scale(1.1);
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.education h3 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--green1);
+    margin-bottom: .5rem;
+}
+
+.education .item {
+    border-radius: .2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .3rem;
+    padding: .3rem;
+}
+
+.education .item .right{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+body.dark .education .item {
+    color: var(--fg2);
+    background-color: var(--bg3);
+}
+
+body.light .education .item {
+    color: var(--fg3-light);
+    background-color: var(--bg4-light);
+}
+
+.education .item img {
+    width: 3rem;
+    height: 3rem;
+}
+

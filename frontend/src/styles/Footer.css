@@ -1,0 +1,140 @@
+@import url('ColorsDark.css');
+@import url("ColorsLight.css");
+
+footer {
+    margin-top: 2rem;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.footer-content {
+    width: 50rem;
+    padding:  1rem 1rem 2rem 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body.dark .footer-content {
+    border-top: .1rem solid var(--bg4);
+}
+
+body.light .footer-content {
+    border-top: .1rem solid var(--bg4-light);
+}
+
+.footer-content .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-content .left .text {
+    color: var(--blue1);
+}
+
+.footer-content .left .icon {
+    color: var(--purple1);
+}
+
+.footer-content .left .text span {
+    color: var(--aqua1);
+}
+
+.footer-content .icon{
+    font-size: 1.5rem;
+}
+
+.footer-content .social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: .3rem;
+    font-size: 1.7rem;
+}
+
+.social-icons .link {
+    padding: .4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2rem;
+    transition: transform 0.3s ease;
+}
+
+body.dark .social-icons .link:hover {
+    background-color: var(--bg2);
+}
+
+body.light .social-icons .link:hover {
+    background-color: var(--bg3-light);
+}
+
+body.dark .social-icons .link:nth-of-type(1){
+    color: var(--fg1);
+}
+
+body.dark .social-icons .link:nth-of-type(2){
+    color: var(--blue1);
+}
+
+body.dark .social-icons .link:nth-of-type(3){
+    color: var(--purple1);
+}
+
+body.dark .social-icons .link:nth-of-type(4){
+    color: var(--blue2);
+}
+
+body.light .social-icons .link:nth-of-type(1){
+    color: var(--fg1-light);
+}
+
+body.light .social-icons .link:nth-of-type(2){
+    color: var(--blue2-light);
+}
+
+body.light .social-icons .link:nth-of-type(3){
+    color: var(--purple2-light);
+}
+
+body.light .social-icons .link:nth-of-type(4){
+    color: var(--blue1-light);
+}
+
+footer .social-icons .link:hover {
+    animation: sway 2s infinite ease-in-out;
+}
+
+@media (max-width: 820px){
+    .footer-content {
+        width: 98%;
+    }
+}
+
+@media (max-width: 640px){
+    .footer-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@keyframes sway {
+    0%, 100% {
+        transform: translateX(0) rotate(0deg);
+    }
+    25% {
+        transform: translateX(-.1rem) rotate(-10deg); 
+    }
+    50% {
+        transform: translateX(.1rem) rotate(10deg); 
+    }
+    75% {
+        transform: translateX(-.1rem) rotate(-10deg); 
+    }
+}
+
