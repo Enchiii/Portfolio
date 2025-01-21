@@ -1,9 +1,23 @@
-// import React from "react";
+import { useState, useEffect } from "react";
+import projectData from '../assets/projectsList.json';
+import SingleProject from "../components/SingleProject";
+import '../styles/Projects.css'
 
 const Projects = () => {
-    return (
-        <h1>Welocme on Projects</h1>
-    )
-}
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    // Ładowanie danych z pliku JSON
+    setProjects(projectData);
+  }, []);
+
+  return (
+    <div>
+      {projects.map((project, index) => (
+        <SingleProject key={index} project={project} />
+      ))}
+    </div>
+  );
+};
 
 export default Projects;
