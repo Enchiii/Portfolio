@@ -2,11 +2,11 @@
 @import url("ColorsLight.css");
 
 .project {
-    padding: 1rem 2rem 1rem 2rem;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    /* align-items: center; */
+    /* justify-content: center; */
+    border-radius: .2rem;
 }
 
 body.dark .project {
@@ -15,4 +15,29 @@ body.dark .project {
 
 body.light .project {
     background-color: var(--bg3-light);
+}
+
+.project-image {
+    width: 50%;
+    padding: 1rem;
+    /* margin: 1rem; */
+    border-radius: 1rem;
+}
+
+.project img{
+    border-radius: 1.5rem;
+}
+
+.project-description {
+    width: 50%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: .3rem;
+}
+
+.project-description .title {
+    font-size: 1.3rem;
+    color: var(--red1);
 }

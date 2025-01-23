@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import projectData from '../assets/projectsList.json';
 import SingleProject from "../components/SingleProject";
-import '../styles/Projects.css'
+import '../styles/Projects.css';
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -12,7 +12,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div>
+    <div className="projects-container">
       {projects.map((project, index) => (
         <SingleProject key={index} project={project} />
       ))}

@@ -2,7 +2,7 @@
     {
         "title": "AI Snake",
         "description": "An AI agent developed for the Snake game using reinforcement learning.",
-        "images": [],
+        "image": "/Projects/sudoku.png",
         "technologies": [
             "Python",
             "Pytorch",
@@ -14,7 +14,7 @@
     {
         "title": "Sudoku Solver",
         "description": "A Sudoku solver application that uses backtracking to solve puzzles. It also allows loading puzzles from images or selecting games from a database.",
-        "images": [],
+        "image": "/Projects/sudoku.png",
         "technologies": [
             "Python",
             "FastAPI",
@@ -29,7 +29,7 @@
     {
         "title": "School Schedule Generator",
         "description": "An application for generating school schedules based on user input, ensuring that all classes fit within the available time slots.",
-        "images": [],
+        "image": "/Projects/sudoku.png",
         "technologies": [
             "Python",
             "Django",
@@ -42,7 +42,7 @@
     {
         "title": "MLLib",
         "description": "A small machine learning library written from scratch and still under development. It focuses on providing basic ML algorithms and utilities.",
-        "images": [],
+        "image": "/Projects/sudoku.png",
         "technologies": [
             "Python",
             "Cupy",
@@ -53,7 +53,7 @@
     {
         "title": "The Ruined World",
         "description": "A hack and slash game being developed in Unity. Currently in development, with plans for complex combat mechanics and an engaging story.",
-        "images": [],
+        "image": "/Projects/sudoku.png",
         "technologies": [
             "Unity",
             "C#"

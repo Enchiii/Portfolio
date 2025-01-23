@@ -11,7 +11,7 @@ const About = () => {
     const copyEmailToClipboard = () => {
         const email = "eryktobiasz2006@gmail.com";
         navigator.clipboard.writeText(email).then(() => {
-            console.log(`Email ${email} has been copied to clipboard!`);
+            alert(`Email ${email} has been copied to clipboard!`);
         }).catch(err => {
             console.error('Failed to copy email: ', err);
         });
