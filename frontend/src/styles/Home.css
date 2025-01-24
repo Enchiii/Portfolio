@@ -43,3 +43,57 @@ body.dark .about{
 body.light .about{
     background-color: var(--bg3-light);
 }
+
+.last-project {
+    margin-top: 2rem;
+    border-radius: .2rem;
+}
+
+body.dark .last-project {
+    background-color: var(--bg2);
+}
+
+body.light .last-project {
+    background-color: var(--bg3-light);
+}
+
+.last-project h3 {
+    padding: 1rem;
+    font-size: 1.4rem;
+    color: var(--green1);
+}
+
+.more-projects {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: center; */
+    gap: .5rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    color: var(--aqua1);
+    text-align: left;
+}
+
+.more-projects .link {
+    padding: .4rem;
+    border-radius: .2rem;   
+    background-color: var(--green1);
+    color: var(--fg2);
+    transition: all .5s ease-out;
+}
+
+body.dark .more-projects .link {
+    color: var(--bg3);
+}
+
+body.dark .more-projects .link:hover {
+    background-color: var(--green2);
+    transform: translateY(-.3rem);
+}
+
+body.light .more-projects .link:hover {
+    background-color: var(--green2-light);
+    transform: translateY(-.3rem);
+}

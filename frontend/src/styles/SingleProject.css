@@ -4,8 +4,6 @@
 .project {
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
-    /* justify-content: center; */
     border-radius: .2rem;
 }
 
@@ -18,14 +16,16 @@ body.light .project {
 }
 
 .project-image {
-    width: 50%;
     padding: 1rem;
-    /* margin: 1rem; */
+    width: 100%;
+    display: block;
     border-radius: 1rem;
+    transition: filter 0.3s ease;
 }
 
-.project img{
-    border-radius: 1.5rem;
+.project img {
+    border-radius: 1.4rem;
+    cursor: pointer;
 }
 
 .project-description {
@@ -39,5 +39,112 @@ body.light .project {
 
 .project-description .title {
     font-size: 1.3rem;
-    color: var(--red1);
+    color: var(--blue1);
+}
+
+.project-description .description {
+    text-align: left;
+    font-size: .9rem;
+}
+
+body.dark .project-description .description {
+    color: var(--fg2);
+}
+
+body.light .project-description .description {
+    color: var(--fg2-light);
+}
+
+.project-description .technologies {
+    margin-top: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    gap: .3rem;
+}
+
+.technologies .technology {
+    display: inline-block;
+    padding: .3rem;
+    font-size: .8rem;
+    border-radius: .2rem;
+    transition: background 0.5s ease-in-out;
+    cursor: default;
+}
+
+body.dark .technologies .technology {
+    background-color: var(--aqua1);
+    color: var(--bg3);
+}
+
+body.light .technologies .technology {
+    background-color: var(--green1);
+    color: var(--bg3-light);
+}
+
+body.dark .technologies .technology:hover {
+    background-color: var(--aqua2);
+}
+
+body.light .technologies .technology:hover {
+    background-color: var(--green2-light);
+}
+
+.project-image-container {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.project-image-container:hover .project-image {
+    filter: brightness(0.4); /* Przyciemnienie obrazu */
+}
+
+/* Stylizacja ikony GitHub */
+.github-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: var(--fg2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Pojawianie się ikony po najechaniu */
+.github-overlay:hover .github-icon {
+    opacity: 1;
+}
+
+.github-overlay {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.github-overlay:hover .project-image {
+    filter: brightness(0.4); /* Przyciemnienie obrazu */
+}
+
+.github-overlay:hover .github-icon {
+    opacity: 1;
+}
+
+.github-icon:hover {
+    color: var(--yellow1);
+}
+
+@media (max-width: 600px) {
+    .project {
+        flex-direction: column;
+    }
+
+    .project-image-container,
+    .project-description {
+        width: 100%;
+        padding-top: 0;
+    }
 }
