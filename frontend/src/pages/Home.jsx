@@ -29,7 +29,7 @@ const Home = () => {
 
             {/* Pojedynczy projekt */}
             <div className="last-project">
-                <h3>One of my last projects</h3>
+                <h4>One of my last projects</h4>
                 {projects.length > 1 ? (
                     <SingleProject project={projects[1]} />
                 ) : (

@@ -15,7 +15,7 @@ const SingleProject = ({ project }) => {
         </a>
       </div>
       <div className="project-description">
-        <h3 className="title">{project.title}</h3>
+        <h5 className="title">{project.title}</h5>
         <p className="description">{project.description}</p>
         <p className="technologies">
           {project.technologies.map((tech, index) => (

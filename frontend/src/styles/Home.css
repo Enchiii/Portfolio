@@ -57,7 +57,7 @@ body.light .last-project {
     background-color: var(--bg3-light);
 }
 
-.last-project h3 {
+.last-project h4 {
     padding: 1rem;
     font-size: 1.4rem;
     color: var(--green1);
@@ -69,8 +69,8 @@ body.light .last-project {
     align-items: center;
     /* justify-content: center; */
     gap: .5rem;
-    margin-top: 1rem;
-    margin-left: 1rem;
+    margin-top: .5rem;
+    /* margin-left: 1rem; */
     padding: 1rem;
     color: var(--aqua1);
     text-align: left;
