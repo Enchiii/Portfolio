@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faInstagram, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import '../styles/Footer.css';
 
@@ -7,6 +8,15 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
     const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const currentDay = daysOfWeek[new Date().getDay()];
+
+    const copyEmailToClipboard = () => {
+        const email = "eryktobiasz2006@gmail.com";
+        navigator.clipboard.writeText(email).then(() => {
+            alert(`Email ${email} has been copied to clipboard!`);
+        }).catch(err => {
+            console.error('Failed to copy email: ', err);
+        });
+    };
 
     return (
         <footer>
@@ -32,6 +42,9 @@ const Footer = () => {
                     </a>
                     <a href="https://www.linkedin.com/in/eryk-tobiasz-8a87392a4/" target='_blank' className="link">
                         <FontAwesomeIcon icon={faLinkedin} />
+                    </a>
+                    <a onClick={copyEmailToClipboard} href="mailto:eryktobiasz2006@gmail.com" target='_blank' className="link">
+                        <FontAwesomeIcon icon={faEnvelope} />
                     </a>
                 </div>
             </div>
