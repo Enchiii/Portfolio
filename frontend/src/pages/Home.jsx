@@ -22,7 +22,7 @@ const Home = () => {
             <div className="about">
                 <p>Hi, I&apos;m Eryk – a high school student from Kraków, interested in AI and problem-solving.</p>
                 <p>I&apos;m excited about exploring new possibilities in artificial intelligence and using them to create innovative solutions.
-                    In addition to programming, I am interested in chess, bouldering and skiing - activities that enhance my strategic thinking, 
+                    In addition to programming, I am interested in chess, skiing and bouldering - activities that enhance my strategic thinking, 
                     focus and perseverance. These are qualities that help me in any project.</p>
                 <p>I believe that together, we can create something amazing.</p>
             </div>

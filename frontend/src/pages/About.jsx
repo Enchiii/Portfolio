@@ -30,7 +30,7 @@ const About = () => {
             <div className="container">
                 <h3>Hello!</h3>
                 <p>I&apos;m a self-taught developer from Cracow interested in AI. I love learning about artificial intelligence and using it to create new and useful solutions.</p>
-                <p>I have been interested in programming for several years, and AI is what I focus on the most. I love discovering new AI capabilities and using them to create innovative solutions. In addition to programming, I am passionate about chess, bouldering, and skiing, which help me develop strategic thinking, concentration, and perseverance, qualities that help me in every project I work on.</p>
+                <p>I have been interested in programming for several years, and AI is what I focus on the most. I love discovering new AI capabilities and using them to create innovative solutions. In addition to programming, I am passionate about chess, skiing, and bouldering, which help me develop strategic thinking, concentration, and perseverance, qualities that help me in every project I work on.</p>
                 <p>I&apos;m currently working with friends on a hack and slash game in Unity using the C# language. I&apos;m responsible for the mechanics and physics of the game, including player movement, combat mechanics, and ensuring smooth and responsive gameplay. I also focus on making sure the game interactions are natural and engaging for the player.
                 </p>
                 <div className="list">

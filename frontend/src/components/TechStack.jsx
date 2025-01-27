@@ -38,7 +38,7 @@ const TechStack = () => {
 
   const settings = {
     infinite: true,
-    speed: 6000,
+    speed: 3000,
     slidesToShow: 6, 
     slidesToScroll: 1,
     autoplay: true,
