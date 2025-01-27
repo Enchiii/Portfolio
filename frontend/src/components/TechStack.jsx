@@ -6,32 +6,26 @@ import "slick-carousel/slick/slick-theme.css";
 //icon importing
 import PythonIcon from './Icons/PythonIcon';
 import PytorchIcon from './Icons/PytorchIcon';
-import HtmlIcon from './Icons/HtmlIcon';
-import CssIcon from './Icons/CssIcon';
 import JavaScriptIcon from './Icons/JavaScriptIcon';
 import TensorflowIcon from './Icons/TensorflowIcon';
 import FastapiIcon from './Icons/FastapiIcon';
 import JupyterIcon from './Icons/JupyterIcon';
 import FedoraIcon from './Icons/FedoraIcon';
-import PycharmIcon from './Icons/PycharmIcon';
 import UnityIcon from './Icons/UnityIcon';
-import VscodeIcon from './Icons/VScodeIcon';
 import MySQLIcon from './Icons/MySQLIcon';
+import ReactIcon from './Icons/ReactIcon';
 
 const techStack = [
   { name: 'Python', icon: <PythonIcon/>, color: 'var(--blue1)' },
   { name: 'Pytorch', icon: <PytorchIcon/>, color: 'var(--orange1)' },
   { name: 'Fastapi', icon: <FastapiIcon/>, color: 'var(--blue1)' },
   { name: 'Tensorflow', icon: <TensorflowIcon/>, color: 'var(--orange1)' },
-  { name: 'PyCharm', icon: <PycharmIcon/>, color: 'var(--green2)' },
   { name: 'Jupyter', icon: <JupyterIcon/>, color: 'var(--orange2)' },
-  { name: 'VSCode', icon: <VscodeIcon/>, color: 'var(--blue1)' },
   { name: 'MySQL', icon: <MySQLIcon/>, color: 'var(--aqua1)' },
-  { name: 'HTML', icon: <HtmlIcon/>, color: 'var(--orange1)' },
-  { name: 'CSS', icon: <CssIcon/>, color: 'var(--blue2)' },
   { name: 'Java Script', icon: <JavaScriptIcon/>, color: 'var(--yellow2)' },
   { name: 'Fedora', icon: <FedoraIcon/>, color: 'var(--blue1)' },
   { name: 'Unity', icon: <UnityIcon/>, color: 'var(--gray1)' },
+  { name: 'React', icon: <ReactIcon/>, color: 'var(--blue2)' },
 ];
 
 const TechStack = () => {
