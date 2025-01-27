@@ -72,7 +72,7 @@ const Navbar = () => {
         if (iconAnimating) {
             const timeout = setTimeout(() => {
                 setIconAnimating(false);
-            }, 700);
+            }, 100);
             return () => clearTimeout(timeout);
         }
     }, [iconAnimating]);
