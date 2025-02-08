@@ -59,5 +59,18 @@
             "C#"
         ],
         "github": ""
+    },
+    {
+        "title": "Book Recommender",
+        "description": "Simple Book Recommendation System suggests books using collaborative filtering, based on a user's reading history and reviews.",
+        "image": "/Projects/bookrs.png",
+        "technologies": [
+            "Python",
+            "Pytorch",
+            "Pandas",
+            "Jupyter",
+            "Matplotlib"
+        ],
+        "github": ""
     }
 ]
